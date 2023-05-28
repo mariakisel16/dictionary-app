@@ -2,3 +2,13 @@
   text-align: center;
   margin-top: 15px;
 }
+.search-bar {
+  text-align: center;
+  display: block;
+}
+.submit-button {
+  margin-left: 10px;
+}
+h1 {
+  text-align: center;
+}
