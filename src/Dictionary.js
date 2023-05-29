@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Response from "./Response";
 
 export default function Dictionary() {
   let [word, setKeyword] = useState(" ");
+  let [result, setResult] = useState(null);
+
   function search(event) {
     event.preventDefault();
     alert(`Searching for ${word}`);
@@ -12,23 +15,30 @@ export default function Dictionary() {
   }
 
   function showTranslate(response) {
-    console.log(response.data[0]);
+    setResult(response.data);
   }
   function handleChange(event) {
     setKeyword(event.target.value);
   }
   return (
-    <form onSubmit={search}>
-      <span className="search-bar">
-        <input
-          type="search"
-          placeholder="Type a word"
-          onChange={handleChange}
-        />
-        <span className="submit-button">
-          <input type="submit" className="btn btn-primary" value="Translate" />
+    <div>
+      <form onSubmit={search}>
+        <span className="search-bar">
+          <input
+            type="search"
+            placeholder="Type a word"
+            onChange={handleChange}
+          />
+          <span className="submit-button">
+            <input
+              type="submit"
+              className="btn btn-primary"
+              value="Translate"
+            />
+          </span>
         </span>
-      </span>
-    </form>
+      </form>
+      <Response result={result} />
+    </div>
   );
 }
