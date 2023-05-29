@@ -12,3 +12,9 @@
 h1 {
   text-align: center;
 }
+.logo-app {
+  width: 30%;
+}
+.search-line {
+  border-color: rgba(0, 0, 0, 0.747);
+}

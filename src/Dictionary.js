@@ -24,17 +24,15 @@ export default function Dictionary() {
     <div>
       <form onSubmit={search}>
         <span className="search-bar">
-          <input
-            type="search"
-            placeholder="Type a word"
-            onChange={handleChange}
-          />
-          <span className="submit-button">
+          <span className="search-line input-group-lg">
             <input
-              type="submit"
-              className="btn btn-primary"
-              value="Translate"
+              type="search"
+              placeholder="Type a word"
+              onChange={handleChange}
             />
+          </span>
+          <span className="submit-button">
+            <input type="submit" className="button" value="Translate" />
           </span>
         </span>
       </form>
