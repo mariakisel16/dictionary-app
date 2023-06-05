@@ -36,6 +36,7 @@ export default function Dictionary() {
           </span>
         </span>
       </form>
+
       <Response result={result} />
     </div>
   );
