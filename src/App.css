@@ -18,3 +18,8 @@ h1 {
 .search-line {
   border-color: rgba(0, 0, 0, 0.747);
 }
+ul.synonyms {
+  text-align: center;
+  display: block;
+  list-style-type: none;
+}
