@@ -14,6 +14,16 @@ function App() {
           <Dictionary />
         </main>
       </div>
+      <footer>
+        This app was created by Maria Kisel, and it is{" "}
+        <a
+          href="https://github.com/mariakisel16/dictionary-app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          open-sourced on GitHub
+        </a>
+      </footer>
     </div>
   );
 }

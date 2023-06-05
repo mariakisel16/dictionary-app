@@ -16,6 +16,7 @@ h1 {
 }
 .logo-app {
   width: 20%;
+  margin-top: 5px;
 }
 .search-line {
   border-color: rgba(0, 0, 0, 0.747);
@@ -33,4 +34,12 @@ section {
   padding: 10px;
   margin-top: 10px;
   border-radius: 10px;
+}
+footer {
+  margin-top: 15px;
+}
+.photos img {
+  max-width: 70%;
+  margin: 5px auto;
+  border-radius: 5px;
 }
